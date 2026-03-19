@@ -102,3 +102,13 @@ if st.button('Predict'):
         st.error(f'⚠️ High Risk of Diabetes (Confidence: {prediction*100:.1f}%)')
     else:
         st.success(f'✅ Low Risk of Diabetes (Confidence: {(1-prediction)*100:.1f}%)')
+
+
+req
+streamlit
+tf-keras
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn

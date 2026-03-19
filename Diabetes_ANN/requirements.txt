@@ -1,7 +1,6 @@
+
+
 streamlit
-tf-keras
-scikit-learn
-pandas
 numpy
-matplotlib
-seaborn
+pandas
+scikit-learn
