@@ -7,7 +7,9 @@ from sklearn.neural_network import MLPClassifier
 
 @st.cache_resource
 def load_model():
-    df = pd.read_csv('diabetes.csv')
+    #df = pd.read_csv('diabetes.csv')
+    base_path = os.path.dirname(__file__)
+    df = pd.read_csv(os.path.join(base_path, 'diabetes.csv'))
     
     zero_columns = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
     for col in zero_columns:
