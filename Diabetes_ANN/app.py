@@ -32,8 +32,8 @@ def load_model():
     model.fit(X_train, y_train)
     
     return model, scaler
-
-model, scaler = load_model()
+with st.spinner('Loading model... please wait'):
+    model, scaler = load_model()
 
 st.title('🩺 Diabetes Risk Predictor')
 st.write('Enter the patient details below to predict diabetes risk.')
